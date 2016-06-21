@@ -1,0 +1,60 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>загадки</title>
+</head>
+<body>
+<script>
+alert ("повторим таблицу умножения?");
+var a = parseInt(prompt ("квадратный корень из 625 :", 0));
+var b = 25;
+if (a==b) {
+	alert ("молодец!");}
+	else { 
+	alert ("неправильно");
+		}
+	var c = parseInt(prompt ("квадратный корень из 529 :", 0));
+	var d = 23;
+	if (c==d) {
+		alert ("правильно");
+		}
+		else { 
+		alert ("неправильно");
+				}
+		var e = parseInt(prompt ("пять умножить на семь :", 0));
+		var f = 35;
+		if (e==f) {
+			alert ("отлично!");}
+			else { 
+			alert ("неправильно");
+						}
+			var j = parseInt(prompt ("тридцать разделить на три :", 0));
+			var k = 10;
+			if (j==k) {
+				alert ("потрясающе!");
+				alert ("игра закончена");
+				}
+				else { 
+				alert ("неправильно");
+				alert ("игра закончена");
+				}
+//явно есть более оптимальные способы проверки... надеюсь, не пропустила как-то возможный вариант. расскажите, пожалуйста, на лекции о том, как можно было это сделать
+if (a==b&&c==d&&e==f&&j==k) {alert ("4 правильных ответа")}
+else if (a!=b&&c==d&&e==f&&j==k) {alert ("3 правильных ответа")}
+else if (a==b&&c!=d&&e==f&&j==k) {alert ("3 правильных ответа")}
+else if (a==b&&c==d&&e!=f&&j==k) {alert ("3 правильных ответа")}
+else if (a==b&&c==d&&e==f&&j!=k) {alert ("3 правильных ответа")}
+else if (a==b&&c==d&&e!=f&&j!=k) {alert ("2 правильных ответа")}
+else if (a==b&&c!=d&&e==f&&j!=k) {alert ("2 правильных ответа")}
+else if (a!=b&&c==d&&e==f&&j!=k) {alert ("2 правильных ответа")}
+else if (a!=b&&c!=d&&e==f&&j==k) {alert ("2 правильных ответа")}
+else if (a!=b&&c==d&&e!=f&&j==k) {alert ("2 правильных ответа")}
+else if (a==b&&c!=d&&e!=f&&j==k) {alert ("2 правильных ответа")}
+else if (a==b&&c!=d&&e!=f&&j!=k) {alert ("1 правильный ответ")}
+else if (a!=b&&c==d&&e!=f&&j!=k) {alert ("1 правильный ответ")}
+else if (a!=b&&c!=d&&e==f&&j!=k) {alert ("1 правильный ответ")}
+else if (a!=b&&c!=d&&e!=f&&j==k) {alert ("1 правильный ответ")}
+else if (a!=b&&c!=d&&e!=f&&j!=k) {alert ("ни одного правильного ответа")}
+</script>
+</body>
+</html>
